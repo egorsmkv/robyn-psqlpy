@@ -1,0 +1,13 @@
+services:
+  postgres_db:
+    image: postgres:17-alpine
+    container_name: robyn_pgsql_dev
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    env_file:
+      - .env.dev
+
+volumes:
+  postgres_data:

@@ -1,0 +1,15 @@
+[project]
+name = "robyn-psqlpy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "psqlpy>=0.8.4",
+    "robyn>=0.62.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+]
